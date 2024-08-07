@@ -11,6 +11,7 @@ AzureDiagnostics
 
 ### AZURE FRONT DOOR STANDARD/PREMIUM ###
 
+AzureDiagnostics
 | where ResourceProvider == "MICROSOFT.CDN" and Category == "FrontDoorWebApplicationFirewallLog"
 | where action_s == "Block"
 | where clientIP_s == "IP_HERE"
